@@ -73,23 +73,17 @@ const Home = () => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{" "}
             <Box as="strong" fontWeight="600">
-              Krishnendu
-            </Box>{" "}
-            and I&apos;m a{" "}
-            <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              Krishnendu.
             </Box>{" "}
             <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box>
-            from{" "}
+              I'm a Software Engineer with a curious mind, 
+            </Box>{" "}
             <Box as="span" whiteSpace="nowrap">
-              India
+              exploring my way into the computer world.&nbsp;
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I'm
-            working on and share what I've learned. 😊
+            Always open to learning and experimenting with new things. 
           </Box>
         </MotionFlex>
       </Flex>
