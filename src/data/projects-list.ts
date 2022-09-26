@@ -49,7 +49,7 @@ export const projectsList = [
     id: 3,
     title: "Candy Game",
     logo: cgLogo,
-    github_url: "https://github.com/krishdu/candy-gamea",
+    github_url: "https://github.com/krishdu/candy-game",
     demo_url: "https://krishdu.github.io/candy-game/",
     published: "2021",
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
