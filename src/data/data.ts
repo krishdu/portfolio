@@ -24,9 +24,17 @@ export const companies = [
   {
     title: "Nagarro Software Pvt. Ltd",
     alt: "Nagarro Software Pvt. Ltd",
+    role: "Engineer",
+    skills: [".NET Core", "Azure", "NodeJs", "Angular", "CI/CD", "Docker"],
+    period: "October, 2022 - Present",
+    logo: NagarroLogo
+  },
+  {
+    title: "Nagarro Software Pvt. Ltd",
+    alt: "Nagarro Software Pvt. Ltd",
     role: "Associate Engineer",
     skills: [".NET Core", "Azure", "NodeJs", "Angular"],
-    period: "2021 - Present",
+    period: "October, 2021 - 2022",
     logo: NagarroLogo
   }
 ];

@@ -71,18 +71,16 @@ const Home = () => {
             Hey!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{" "}
             <Box as="strong" fontWeight="600">
-              Krishnendu.
+              Krishnendu Patra || 
             </Box>{" "}
-            <Box as="span" whiteSpace="nowrap">
-              I'm a Software Engineer with a curious mind, 
+            <Box as="strong" fontWeight="600">
+              Engineer @ Nagarro
             </Box>{" "}
-            <Box as="span" whiteSpace="nowrap">
-              exploring my way into the computer world.&nbsp;
-            </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+            I'm a Software Engineer with a curious mind, 
+            exploring my way into the computer world.&nbsp; <br />
             Always open to learning and experimenting with new things. 
           </Box>
         </MotionFlex>

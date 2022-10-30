@@ -179,13 +179,13 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "mongodb" || type === "express") {
+  if (type === "mongodb" || type === "express" || type === "spring data jpa" || type === "mysql") {
     return "red";
-  } else if (type === "react"  || type === "react-redux") {
+  } else if (type === "react"  || type === "react-redux" || type === "react") {
     return "cyan";
-  } else if (type === "javascript" || type === "tailwindcss") {
+  } else if (type === "javascript" || type === "tailwindcss" ||  type === "spring boot") {
     return "yellow";
-  } else if (type === "typescript" || type === "java" || type === "html") {
+  } else if (type === "typescript" || type === "java" || type === "html" || type === "docker") {
     return "blue";
   } else if (type === "nodejs" || type === "css") {
     return "teal";

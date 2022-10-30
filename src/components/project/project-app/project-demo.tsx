@@ -37,10 +37,10 @@ const ProjectDemo: React.FC<PostProps> = () => {
     if(!id){
       setProjects(projectsList);
     }
-    else if(isNaN(id) || projectsList.length < Number(id)) {
+    else if(isNaN(id) || projectsList?.find(item => item.id === id)) {
       setIsInvalidId(true);
     }else{
-      setProjects([projectsList[id]]);
+      setProjects([projectsList.find(item => item.id == id)]);
     }
   },[id]);
 

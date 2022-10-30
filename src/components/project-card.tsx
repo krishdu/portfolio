@@ -45,6 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         align="start"
         spacing={4}
         cursor="pointer"
+        overflowY="auto"
         _hover={{ shadow: "lg" }}
       >
         <LazyImage

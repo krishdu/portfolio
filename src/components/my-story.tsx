@@ -35,7 +35,7 @@ const MyStory = () => {
               maxW="lg"
               textAlign="center"
             >
-              This page tells you my journey in timeline shape.
+              My Journey.
             </Text>
           </VStack>
         </PageSlideFade>
