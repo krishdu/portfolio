@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c8196065.chunk.css",
-    "main.js": "/portfolio/static/js/main.cc7cde76.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cc7cde76.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.69c7ee1b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.69c7ee1b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.9679fdbf.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.9679fdbf.js.map",
     "static/js/2.04204670.chunk.js": "/portfolio/static/js/2.04204670.chunk.js",
@@ -18,6 +18,8 @@
     "static/media/bb-logo.c678efa8.png": "/portfolio/static/media/bb-logo.c678efa8.png",
     "static/media/ccppLogo.959e7dd0.png": "/portfolio/static/media/ccppLogo.959e7dd0.png",
     "static/media/cg1.00403f72.gif": "/portfolio/static/media/cg1.00403f72.gif",
+    "static/media/erLogo.7bcb9693.png": "/portfolio/static/media/erLogo.7bcb9693.png",
+    "static/media/examRig1.1a859a39.gif": "/portfolio/static/media/examRig1.1a859a39.gif",
     "static/media/git-project1.b1c00e77.png": "/portfolio/static/media/git-project1.b1c00e77.png",
     "static/media/ht-1.1a6f538a.gif": "/portfolio/static/media/ht-1.1a6f538a.gif",
     "static/media/htLogo.55f9a03f.png": "/portfolio/static/media/htLogo.55f9a03f.png",
@@ -40,6 +42,6 @@
     "static/js/runtime-main.9679fdbf.js",
     "static/js/2.04204670.chunk.js",
     "static/css/main.c8196065.chunk.css",
-    "static/js/main.cc7cde76.chunk.js"
+    "static/js/main.69c7ee1b.chunk.js"
   ]
 }
