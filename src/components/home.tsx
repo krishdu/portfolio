@@ -9,7 +9,7 @@ import {
   Link,
   UnorderedList,
   ListItem,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { Link as NavLink } from "react-router-dom";
 import { MotionBox, MotionFlex } from "./motion";
@@ -30,22 +30,19 @@ const Home = () => {
           opacity="0"
           initial={{
             translateX: -150,
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
             translateX: 0,
             opacity: 1,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
           m="auto"
           mb={[16, 16, "auto"]}
         >
-          <Avatar
-            size={"2xl"}
-            src={UserIcon}
-          />
+          <Avatar size={"2xl"} src={UserIcon} />
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
@@ -57,14 +54,14 @@ const Home = () => {
           direction="column"
           initial={{
             opacity: 0,
-            translateX: 150
+            translateX: 150,
           }}
           animate={{
             opacity: 1,
             translateX: 0,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
         >
           <Header underlineColor={ORANGE} emoji="👋" mt={0} className="face">
@@ -72,16 +69,16 @@ const Home = () => {
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             <Box as="strong" fontWeight="600">
-              Krishnendu Patra || 
+              Krishnendu Patra ||
             </Box>{" "}
             <Box as="strong" fontWeight="600">
               Engineer @ Nagarro
             </Box>{" "}
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            I'm a Software Engineer with a curious mind, 
-            exploring my way into the computer world.&nbsp; <br />
-            Always open to learning and experimenting with new things. 
+            I'm a Software Engineer with a curious mind, exploring my way into
+            the computer world.&nbsp; <br />
+            Always open to learning and experimenting with new things.
           </Box>
         </MotionFlex>
       </Flex>
@@ -89,15 +86,15 @@ const Home = () => {
         w="100%"
         opacity="0"
         initial={{
-          translateY: 80
+          translateY: 80,
         }}
         animate={{
           translateY: 0,
           opacity: 1,
           transition: {
             delay: ANIMATION_DURATION - 0.1,
-            duration: ANIMATION_DURATION
-          }
+            duration: ANIMATION_DURATION,
+          },
         }}
       >
         <Box mt={10}>
@@ -118,9 +115,9 @@ const Home = () => {
               Highlights
             </Text>
             <UnorderedList textAlign="left" paddingLeft={5} m={0}>
-            <ListItem>
-                <Link as={NavLink} to="/github">
-                  Github Repos
+              <ListItem>
+                <Link as={NavLink} to="/about">
+                  About
                 </Link>
               </ListItem>
               <ListItem>

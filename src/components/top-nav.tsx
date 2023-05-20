@@ -15,12 +15,12 @@ import {
   MenuList,
   MenuItem,
   Stack,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ColorModeSwitcher } from "ColorModeSwitcher";
 import UserIcon from "assets/images/user_icon.png";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
@@ -32,7 +32,7 @@ import { BsBook } from "react-icons/bs";
 const webLinks = [
   { name: "Home", path: "/portfolio" },
   { name: "About", path: "/about" },
-  { name: "Projects", path: "/project" }
+  { name: "Projects", path: "/project" },
 ];
 
 const mobileLinks = [
@@ -40,10 +40,9 @@ const mobileLinks = [
   { name: "About", path: "/about" },
   { name: "Projects", path: "/project" },
   { name: "Tech Stack", path: "/tech-stack" },
-  { name: "GitHub Repositories", path: "/github" },
+  // { name: "GitHub Repositories", path: "/github" },
   { name: "Blog", path: "/blog" },
-  { name: "My Story", path: "/story-timeline" }
-  
+  { name: "My Story", path: "/story-timeline" },
 ];
 
 interface NavLinkProps {
@@ -62,10 +61,10 @@ const NavLink = (props: NavLinkProps) => {
       rounded={"md"}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.900")
+        bg: useColorModeValue("gray.200", "gray.900"),
       }}
       _activeLink={{
-        color: useColorModeValue("blue.500", "blue.200")
+        color: useColorModeValue("blue.500", "blue.200"),
       }}
       onClick={() => props.onClose()}
       to={props.path}
@@ -80,7 +79,7 @@ export default function TopNav() {
 
   const menuProps = {
     bg: useColorModeValue("gray.200", "gray.900"),
-    color: useColorModeValue("blue.500", "blue.200")
+    color: useColorModeValue("blue.500", "blue.200"),
   };
 
   return (
@@ -153,18 +152,6 @@ export default function TopNav() {
                       </HStack>
                     </MenuItem>
                   </Link>
-                  <Link as={RouterNavLink} to="/github">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={BsBook}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>GitHub Repositories</Text>
-                      </HStack>
-                    </MenuItem>
-                  </Link>
                   <Link as={RouterNavLink} to="/blog">
                     <MenuItem>
                       <HStack>
@@ -198,15 +185,29 @@ export default function TopNav() {
               as={Link}
               href={"https://github.com/krishdu"}
               size={"md"}
+              isExternal
               icon={<FaGithub />}
               aria-label={"Github account"}
               bg={useColorModeValue("white", "gray.700")}
               _hover={{
                 textDecoration: "none",
-                bg: useColorModeValue("gray.200", "gray.900")
+                bg: useColorModeValue("gray.200", "gray.900"),
               }}
             />
-            <ColorModeSwitcher justifySelf="flex-end" />
+            <IconButton
+              as={Link}
+              href={"https://linkedin.com/in/krishnendu-patra/"}
+              size={"md"}
+              icon={<FaLinkedin />}
+              aria-label={"LinkedIn account"}
+              isExternal
+              bg={useColorModeValue("white", "gray.700")}
+              _hover={{
+                textDecoration: "none",
+                bg: useColorModeValue("gray.200", "gray.900"),
+              }}
+            />
+            {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
           </Flex>
         </Flex>
 

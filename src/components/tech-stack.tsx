@@ -11,14 +11,14 @@ import {
   Tab,
   TabPanel,
   useColorModeValue,
-  SimpleGrid
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
 import { GiSpiderWeb } from "react-icons/gi";
-import { GrStatusGood } from "react-icons/gr"
+import { GrStatusGood } from "react-icons/gr";
 import SkillCard from "./skill-card";
 import { skills } from "data/data";
 import Header from "./header";
@@ -32,9 +32,9 @@ const TechStack = () => {
     setSkillsList(skills);
   }, []);
 
-  const filterSkills = tab => {
-    console.log(skills.filter(skill => skill.type === tab));
-    if (tab.length) setSkillsList(skills.filter(skill => skill.type === tab));
+  const filterSkills = (tab) => {
+    // console.log(skills.filter(skill => skill.type === tab));
+    if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab));
     else setSkillsList(skills);
   };
 
@@ -52,7 +52,8 @@ const TechStack = () => {
               maxW="lg"
               textAlign="center"
             >
-              A list of my favorite tools and technologies that I've used so far.
+              A list of my favorite tools and technologies that I've used so
+              far.
             </Text>
           </VStack>
         </Section>
@@ -69,7 +70,7 @@ const TechStack = () => {
                 color={useColorModeValue("gray.600", "gray.500")}
                 _selected={{
                   color: "green.800",
-                  bg: "green.100"
+                  bg: "green.100",
                 }}
                 mr={2}
                 mt={2}
@@ -85,7 +86,7 @@ const TechStack = () => {
                 color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
                   color: useColorModeValue("gray.100", "gray.800"),
-                  bg: useColorModeValue("gray.900", "gray.100")
+                  bg: useColorModeValue("gray.900", "gray.100"),
                 }}
                 mr={2}
                 mt={2}
@@ -101,7 +102,7 @@ const TechStack = () => {
                 color={useColorModeValue("gray.600", "gray.500")}
                 _selected={{
                   color: "green.800",
-                  bg: "green.100"
+                  bg: "green.100",
                 }}
                 mr={2}
                 mt={2}
@@ -117,7 +118,7 @@ const TechStack = () => {
                 color={useColorModeValue("gray.600", "gray.500")}
                 _selected={{
                   color: "red.800",
-                  bg: "red.100"
+                  bg: "red.100",
                 }}
                 mr={2}
                 mt={2}
@@ -133,7 +134,7 @@ const TechStack = () => {
                 color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
                   color: "green.800",
-                  bg: "green.100"
+                  bg: "green.100",
                 }}
                 mr={2}
                 mt={2}

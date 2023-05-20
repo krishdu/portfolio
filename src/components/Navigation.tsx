@@ -4,7 +4,8 @@ import About from "./about";
 import Posts from "./blog/posts";
 import RepositoriesList from "./repositories-list";
 import Home from "./home";
-import TechStack from "./tech-stack";
+// import TechStack from "./tech-stack";
+import TechStackSimpleVersion from "./tech-stack-simple";
 import MyStory from "./my-story";
 import ProjectDemo from "./project/project-app/project-demo";
 
@@ -15,24 +16,33 @@ const routes = [
     path: "/project",
     exact: true,
     name: "Project",
-    component: ProjectDemo
+    component: ProjectDemo,
   },
   {
     path: "/project/:id",
     exact: true,
     name: "Project",
-    component: ProjectDemo
+    component: ProjectDemo,
   },
   {
     path: "/github",
     exact: true,
     name: "Github",
-    component: RepositoriesList
+    component: RepositoriesList,
   },
   { path: "/blog", exact: true, name: "Blog", component: Posts },
-  { path: "/tech-stack", exact: true, name: "Tools", component: TechStack },
-  { path: "/story-timeline", exact: true, name: "My Story", component: MyStory }
-
+  {
+    path: "/tech-stack",
+    exact: true,
+    name: "Tools",
+    component: TechStackSimpleVersion,
+  },
+  {
+    path: "/story-timeline",
+    exact: true,
+    name: "My Story",
+    component: MyStory,
+  },
 ];
 const Navigation = () => {
   return (
@@ -42,7 +52,7 @@ const Navigation = () => {
           key={idx}
           exact={route.exact}
           path={route.path}
-          render={props => <route.component {...props} />}
+          render={(props) => <route.component {...props} />}
         />
       ))}
       <Redirect to="/" />

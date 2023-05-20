@@ -22,18 +22,18 @@ import springBootLogo from "assets/images/skills/springBoot.png";
 
 export const companies = [
   {
-    title: "Nagarro Software Pvt. Ltd",
+    title: "Nagarro",
     alt: "Nagarro Software Pvt. Ltd",
     role: "Engineer",
-    skills: [".NET Core", "Azure", "NodeJs", "Angular", "CI/CD", "Docker"],
+    skills: ["NodeJs", "React&Redux", "Spring Boot", "Spring Data JPA", "Azure", "Git", "CI/CD", "Docker"],
     period: "October, 2022 - Present",
     logo: NagarroLogo
   },
   {
-    title: "Nagarro Software Pvt. Ltd",
+    title: "Nagarro",
     alt: "Nagarro Software Pvt. Ltd",
     role: "Associate Engineer",
-    skills: [".NET Core", "Azure", "NodeJs", "Angular"],
+    skills: ["NodeJs", "React&Redux", ".NET Core", "Azure", "SQL"],
     period: "October, 2021 - 2022",
     logo: NagarroLogo
   }
@@ -93,7 +93,8 @@ export const skills = [
     description: "Programming Language",
     link: "https://dev.java/learn/getting-started-with-java/",
     type: "programminglanguages",
-    image: javaLogo
+    image: javaLogo,
+    presentInSimpleVersion: true
   },
   {
     name: "Javascript",
