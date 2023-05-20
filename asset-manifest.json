@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c8196065.chunk.css",
-    "main.js": "/portfolio/static/js/main.69c7ee1b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.69c7ee1b.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.9679fdbf.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.9679fdbf.js.map",
-    "static/js/2.04204670.chunk.js": "/portfolio/static/js/2.04204670.chunk.js",
-    "static/js/2.04204670.chunk.js.map": "/portfolio/static/js/2.04204670.chunk.js.map",
-    "static/js/3.95a4a3e8.chunk.js": "/portfolio/static/js/3.95a4a3e8.chunk.js",
-    "static/js/3.95a4a3e8.chunk.js.map": "/portfolio/static/js/3.95a4a3e8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.4508d806.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4508d806.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.db9e33af.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.db9e33af.js.map",
+    "static/js/2.7708a648.chunk.js": "/portfolio/static/js/2.7708a648.chunk.js",
+    "static/js/2.7708a648.chunk.js.map": "/portfolio/static/js/2.7708a648.chunk.js.map",
+    "static/js/3.9a8b307f.chunk.js": "/portfolio/static/js/3.9a8b307f.chunk.js",
+    "static/js/3.9a8b307f.chunk.js.map": "/portfolio/static/js/3.9a8b307f.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.c8196065.chunk.css.map": "/portfolio/static/css/main.c8196065.chunk.css.map",
-    "static/js/2.04204670.chunk.js.LICENSE.txt": "/portfolio/static/js/2.04204670.chunk.js.LICENSE.txt",
-    "static/js/3.95a4a3e8.chunk.js.LICENSE.txt": "/portfolio/static/js/3.95a4a3e8.chunk.js.LICENSE.txt",
+    "static/js/2.7708a648.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7708a648.chunk.js.LICENSE.txt",
+    "static/js/3.9a8b307f.chunk.js.LICENSE.txt": "/portfolio/static/js/3.9a8b307f.chunk.js.LICENSE.txt",
     "static/media/azureLogo.d7f7b245.png": "/portfolio/static/media/azureLogo.d7f7b245.png",
     "static/media/bb-1.8d54de3b.gif": "/portfolio/static/media/bb-1.8d54de3b.gif",
     "static/media/bb-logo.c678efa8.png": "/portfolio/static/media/bb-logo.c678efa8.png",
@@ -39,9 +39,9 @@
     "static/media/your-pen-4.9a67bbed.gif": "/portfolio/static/media/your-pen-4.9a67bbed.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.9679fdbf.js",
-    "static/js/2.04204670.chunk.js",
+    "static/js/runtime-main.db9e33af.js",
+    "static/js/2.7708a648.chunk.js",
     "static/css/main.c8196065.chunk.css",
-    "static/js/main.69c7ee1b.chunk.js"
+    "static/js/main.4508d806.chunk.js"
   ]
 }
