@@ -16,8 +16,24 @@ import tdl1 from "assets/images/projects/todoly/todoly1.gif";
 import tdlLogo from "assets/images/projects/todoly/todolyLogo.png";
 import erLogo from "assets/images/projects/examrig/erLogo.png";
 import er1 from "assets/images/projects/examrig/examRig1.gif";
+import writopiaLogo from "assets/images/projects/writeopia/writeopia-logo.jpg";
+import writopiaGif from "assets/images/projects/writeopia/writeopia-gif-v1.gif";
 
 export const projectsList = [
+   {
+    id: 65,
+    title: "Writeopia",
+    logo: writopiaLogo,
+    github_url: "https://github.com/krishdu/Writeopia",
+    demo_url: null,
+    published: "2023",
+    blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
+    link: `/project/${65}`,
+    images:[writopiaGif],
+    featured: true,
+    desc: 'Unlock your creativity with Writeopia: Where words come to life. | Write blog, make friend, follow favourite writer and way forward.',
+    technologies: ["Spring Boot", "Spring Data Jpa", "react", "MySQL"]
+  },
   {
     id: 70,
     title: "ExamRig",

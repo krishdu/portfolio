@@ -13,7 +13,7 @@ import {
   Flex,
   Box,
   Button,
-  Divider
+  Divider,
 } from "@chakra-ui/react";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
@@ -32,30 +32,28 @@ const ProjectDemo: React.FC<PostProps> = () => {
   const buttonColor = useColorModeValue("green.600", "green.200");
   const buttonBgColor = useColorModeValue("white", "gray.800");
   const projectColor = useColorModeValue("teal.600", "teal.200");
-  
+
   React.useEffect(() => {
-    if(!id){
+    if (!id) {
       setProjects(projectsList);
-    }
-    else if(isNaN(id) || projectsList?.find(item => item.id === id)) {
+    } else if (isNaN(id) || projectsList?.find((item) => item.id === id)) {
       setIsInvalidId(true);
-    }else{
-      setProjects([projectsList.find(item => item.id == id)]);
+    } else {
+      setProjects([projectsList.find((item) => item.id == id)]);
     }
-  },[id]);
+  }, [id]);
 
-  if(isInvalidId) return <Redirect to={"/"} />;
+  if (isInvalidId) return <Redirect to={"/"} />;
 
-  if(projects) {
-    return (
-      projects.map((project) => (
-        <>
+  if (projects) {
+    return projects.map((project) => (
+      <>
         <VStack mt={0} mb={6} spacing={1} align="start">
-          <Heading 
+          <Heading
             as="h1"
-            fontSize="3xl" 
-            lineHeight="shorter" 
-            fontWeight="bold" 
+            fontSize="3xl"
+            lineHeight="shorter"
+            fontWeight="bold"
             color={projectColor}
           >
             {project?.title}
@@ -78,7 +76,7 @@ const ProjectDemo: React.FC<PostProps> = () => {
             </Text>
           </HStack>
           <HStack spacing={1} alignItems="center">
-            {project?.technologies?.map(tech => (
+            {project?.technologies?.map((tech) => (
               <Tag
                 size="sm"
                 padding="0 3px"
@@ -91,18 +89,20 @@ const ProjectDemo: React.FC<PostProps> = () => {
           </HStack>
         </Flex>
         <HStack align="end" mt={5}>
-          <Link href={project?.demo_url} isExternal>
-            <Button
-              ml={2}
-              variant="outline"
-              size={"sm"}
-              color={buttonColor}
-              bg={buttonBgColor}
-              leftIcon={<BiLinkExternal size={18} />}
-            >
-              Demo
-            </Button>
-          </Link>
+          {project?.demo_url && (
+            <Link href={project?.demo_url} isExternal>
+              <Button
+                ml={2}
+                variant="outline"
+                size={"sm"}
+                color={buttonColor}
+                bg={buttonBgColor}
+                leftIcon={<BiLinkExternal size={18} />}
+              >
+                Demo
+              </Button>
+            </Link>
+          )}
           <Link href={project?.github_url} isExternal>
             <Button
               ml={2}
@@ -131,24 +131,28 @@ const ProjectDemo: React.FC<PostProps> = () => {
           </Box>
         </VStack>
         <Divider
-            orientation="horizontal"
-            opacity={1}
-            my={10}
-            borderBottomWidth={0}
-            height={"6px"}
-            bg={"cyan.500"}
-          />
+          orientation="horizontal"
+          opacity={1}
+          my={10}
+          borderBottomWidth={0}
+          height={"6px"}
+          bg={"cyan.500"}
+        />
       </>
-      ))
-    );
-  }else {
+    ));
+  } else {
     return (
       <>
-      <HStack mt={0} mb={6} spacing={1} align="center">
-        <Heading as="h1" fontSize="3xl" lineHeight="shorter" fontWeight="bold">
-          Something went wrong...
-        </Heading>
-      </HStack>
+        <HStack mt={0} mb={6} spacing={1} align="center">
+          <Heading
+            as="h1"
+            fontSize="3xl"
+            lineHeight="shorter"
+            fontWeight="bold"
+          >
+            Something went wrong...
+          </Heading>
+        </HStack>
       </>
     );
   }
