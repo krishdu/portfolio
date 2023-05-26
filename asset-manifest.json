@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c8196065.chunk.css",
-    "main.js": "/portfolio/static/js/main.4508d806.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4508d806.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b4f1d2d0.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b4f1d2d0.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.db9e33af.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.db9e33af.js.map",
     "static/js/2.7708a648.chunk.js": "/portfolio/static/js/2.7708a648.chunk.js",
@@ -36,12 +36,13 @@
     "static/media/todoly1.1970c390.gif": "/portfolio/static/media/todoly1.1970c390.gif",
     "static/media/user_icon.809a527e.png": "/portfolio/static/media/user_icon.809a527e.png",
     "static/media/vidyasagarVidyapithLogo.acf054c7.png": "/portfolio/static/media/vidyasagarVidyapithLogo.acf054c7.png",
+    "static/media/writeopia-gif-v1.bb819ca1.gif": "/portfolio/static/media/writeopia-gif-v1.bb819ca1.gif",
     "static/media/your-pen-4.9a67bbed.gif": "/portfolio/static/media/your-pen-4.9a67bbed.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.db9e33af.js",
     "static/js/2.7708a648.chunk.js",
     "static/css/main.c8196065.chunk.css",
-    "static/js/main.4508d806.chunk.js"
+    "static/js/main.b4f1d2d0.chunk.js"
   ]
 }
