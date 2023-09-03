@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c8196065.chunk.css",
-    "main.js": "/portfolio/static/js/main.b4f1d2d0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b4f1d2d0.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7c7dbc0e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7c7dbc0e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.db9e33af.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.db9e33af.js.map",
     "static/js/2.7708a648.chunk.js": "/portfolio/static/js/2.7708a648.chunk.js",
@@ -31,6 +31,7 @@
     "static/media/nagarro_logo.a905b0c2.png": "/portfolio/static/media/nagarro_logo.a905b0c2.png",
     "static/media/ngg1.af5866d6.gif": "/portfolio/static/media/ngg1.af5866d6.gif",
     "static/media/nodeJsLogo.20c94615.png": "/portfolio/static/media/nodeJsLogo.20c94615.png",
+    "static/media/nykaa_logo.c93ecd76.jpg": "/portfolio/static/media/nykaa_logo.c93ecd76.jpg",
     "static/media/pg1.2002d662.gif": "/portfolio/static/media/pg1.2002d662.gif",
     "static/media/springBoot.94f201ce.png": "/portfolio/static/media/springBoot.94f201ce.png",
     "static/media/todoly1.1970c390.gif": "/portfolio/static/media/todoly1.1970c390.gif",
@@ -43,6 +44,6 @@
     "static/js/runtime-main.db9e33af.js",
     "static/js/2.7708a648.chunk.js",
     "static/css/main.c8196065.chunk.css",
-    "static/js/main.b4f1d2d0.chunk.js"
+    "static/js/main.7c7dbc0e.chunk.js"
   ]
 }
