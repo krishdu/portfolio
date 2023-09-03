@@ -56,12 +56,12 @@ const TechStackSimpleVersion = () => {
         </Section>
         <Section>
           <MotionBox variants={container} initial="hidden" animate="visible">
-            <Text fontWeight={"bold"}>Proficient at:</Text> Core Java, NodeJs,
-            ReactJs/Redux, Azure, Relational Databases
+            <Text fontWeight={"bold"}>Proficient at:</Text> Core Java, Spring
+            Boot, Spring Data Jpa, Azure, Relational Databases
             <br />
             <br />
             <Text fontWeight={"bold"}>Good at:</Text>
-            Spring Boot, Spring Data Jpa, Microservices development, Docker
+            NodeJs, ReactJs/Redux, Microservices development, Docker, AWS
             <br />
             <br />
             <Text fontWeight={"bold"}>Explored:</Text>

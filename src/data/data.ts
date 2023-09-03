@@ -1,4 +1,5 @@
 import NagarroLogo from "assets/images/logos/nagarro_logo.png";
+import NykaaLogo from "assets/images/logos/nykaa_logo.jpg";
 import vidyasagarVidyapithLogo from "assets/images/logos/vidyasagarVidyapithLogo.png"
 import TechnoMainLogo from "assets/images/logos/TechnoMainLogo.png";
 import phpLogo from "assets/images/skills/phpLogo.png";
@@ -22,19 +23,27 @@ import springBootLogo from "assets/images/skills/springBoot.png";
 
 export const companies = [
   {
+    title: "Nykaa",
+    alt: "Nykaa E- Retail Pvt. Ltd.",
+    role: "Software Engineer - 1",
+    skills: ["Spring Boot", "Spring Data JPA", "AWS", "React&Redux", "CI/CD", "Docker"],
+    period: "August, 2023 - Present",
+    logo: NykaaLogo
+  },
+  {
     title: "Nagarro",
     alt: "Nagarro Software Pvt. Ltd",
     role: "Engineer",
     skills: ["NodeJs", "React&Redux", "Spring Boot", "Spring Data JPA", "Azure", "Git", "CI/CD", "Docker"],
-    period: "October, 2022 - Present",
+    period: "October, 2022 - August, 2023",
     logo: NagarroLogo
   },
   {
     title: "Nagarro",
     alt: "Nagarro Software Pvt. Ltd",
     role: "Associate Engineer",
-    skills: ["NodeJs", "React&Redux", ".NET Core", "Azure", "SQL"],
-    period: "October, 2021 - 2022",
+    skills: ["NodeJs", "React&Redux", "Spring Boot", "Azure", "SQL"],
+    period: "October, 2021 - October, 2022",
     logo: NagarroLogo
   }
 ];

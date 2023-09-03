@@ -72,7 +72,7 @@ const Home = () => {
               Krishnendu Patra ||
             </Box>{" "}
             <Box as="strong" fontWeight="600">
-              Engineer @ Nagarro
+              SDE @ Nykaa
             </Box>{" "}
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
@@ -121,13 +121,13 @@ const Home = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link as={NavLink} to="/story-timeline">
-                  Story page
+                <Link as={NavLink} to="/tech-stack">
+                  Tech Stack
                 </Link>
               </ListItem>
               <ListItem>
-                <Link as={NavLink} to="/tech-stack">
-                  Tech Stack
+                <Link as={NavLink} to="/story-timeline">
+                  Story page
                 </Link>
               </ListItem>
             </UnorderedList>
