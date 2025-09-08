@@ -72,7 +72,7 @@ const Home = () => {
               Krishnendu Patra ||
             </Box>{" "}
             <Box as="strong" fontWeight="600">
-              SDE2 @ Amex
+              SDE @ Nykaa
             </Box>{" "}
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">

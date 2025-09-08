@@ -1,6 +1,5 @@
 import NagarroLogo from "assets/images/logos/nagarro_logo.png";
 import NykaaLogo from "assets/images/logos/nykaa_logo.jpg";
-import AmexLogo from "assets/images/logos/amexLogo.jpeg";
 import vidyasagarVidyapithLogo from "assets/images/logos/vidyasagarVidyapithLogo.png"
 import TechnoMainLogo from "assets/images/logos/TechnoMainLogo.png";
 import phpLogo from "assets/images/skills/phpLogo.png";
@@ -24,19 +23,11 @@ import springBootLogo from "assets/images/skills/springBoot.png";
 
 export const companies = [
   {
-    title: "American Express",
-    alt: "American Express",
-    role: "Software Engineer - 2",
-    skills: ["Spring Boot", "Vert.x", "AWS", "React&Redux", "SQL", "NoSQL", "Kafka", "Docker", "Distributed System"],
-    period: "September, 2024 - Present",
-    logo: AmexLogo
-  },
-  {
     title: "Nykaa",
     alt: "Nykaa E- Retail Pvt. Ltd.",
     role: "Software Engineer - 1",
     skills: ["Spring Boot", "Spring Data JPA", "AWS", "React&Redux", "CI/CD", "Docker"],
-    period: "August, 2023 - September, 2024",
+    period: "August, 2023 - Present",
     logo: NykaaLogo
   },
   {
@@ -53,14 +44,6 @@ export const companies = [
     role: "Associate Engineer",
     skills: ["NodeJs", "React&Redux", "Spring Boot", "Azure", "SQL"],
     period: "October, 2021 - October, 2022",
-    logo: NagarroLogo
-  },
-  {
-    title: "Nagarro",
-    alt: "Nagarro Software Pvt. Ltd",
-    role: "Trainee",
-    skills: ["NodeJs", "React&Redux", "Spring Boot", "Azure", "SQL"],
-    period: "April, 2021 - September, 2021",
     logo: NagarroLogo
   }
 ];

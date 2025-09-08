@@ -42,7 +42,7 @@ const MyStory = () => {
       </Section>
       <VStack textAlign="start" align="flex-start" mb={0}>
         <Box>
-          <StoryTimeline year={"2025"} index={0} />
+          <StoryTimeline year={"2022"} index={0} />
           {companies.map((company, index) => (
             <StoryTimeline
               icon={BsFillBriefcaseFill}
