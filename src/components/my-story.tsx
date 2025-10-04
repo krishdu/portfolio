@@ -8,7 +8,7 @@ import {
   HStack,
   Divider,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { StoryTimeline } from "./story-timeline";
 import { FaGraduationCap, FaAward, FaMedal } from "react-icons/fa";
@@ -20,7 +20,6 @@ import Section from "./section";
 import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
-
   return (
     <VStack>
       <Section mb={14}>
@@ -42,12 +41,9 @@ const MyStory = () => {
       </Section>
       <VStack textAlign="start" align="flex-start" mb={0}>
         <Box>
-          <StoryTimeline year={"2022"} index={0} />
+          <StoryTimeline year={"2025"} index={0} />
           {companies.map((company, index) => (
-            <StoryTimeline
-              icon={BsFillBriefcaseFill}
-              index={index}
-            >
+            <StoryTimeline icon={BsFillBriefcaseFill} index={index}>
               {" "}
               <HStack>
                 <Image

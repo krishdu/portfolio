@@ -1,4 +1,7 @@
 #Krishnendu Patra -Portfolio
+node version:
+node: v16.8.0
+npm: 7.21.0
 
 ```
 Steps to Deploy in GitHub Pages
