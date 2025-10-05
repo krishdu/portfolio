@@ -1,10 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools"
+import { mode } from "@chakra-ui/theme-tools";
 
 export const theme = extendTheme({
   fonts: {
     heading: "'Red Hat Display', sans-serif",
-    body: "'Red Hat Text', cursive",
+    body: "'Red Hat Text', sans-serif",
   },
   styles: {
     global: (props) => ({
@@ -52,11 +52,11 @@ export const theme = extendTheme({
     //   }
     // },
     Popover: {
-      parts: ['popper'],
-      baseStyle: props => ({
+      parts: ["popper"],
+      baseStyle: (props) => ({
         popper: {
           zIndex: 10,
-          maxW: 'xs',
+          maxW: "xs",
           // maxW: props.width ? props.width : 'xs',
           w: props.width,
         },
@@ -177,19 +177,33 @@ export const theme = extendTheme({
   },
 });
 
-export const getTagColor = type => {
-  type = type.toLowerCase()
-  if (type === "mongodb" || type === "express" || type === "spring data jpa" || type === "mysql") {
+export const getTagColor = (type) => {
+  type = type.toLowerCase();
+  if (
+    type === "mongodb" ||
+    type === "express" ||
+    type === "spring data jpa" ||
+    type === "mysql"
+  ) {
     return "red";
-  } else if (type === "react"  || type === "react-redux" || type === "react") {
+  } else if (type === "react" || type === "react-redux" || type === "react") {
     return "cyan";
-  } else if (type === "javascript" || type === "tailwindcss" ||  type === "spring boot") {
+  } else if (
+    type === "javascript" ||
+    type === "tailwindcss" ||
+    type === "spring boot"
+  ) {
     return "yellow";
-  } else if (type === "typescript" || type === "java" || type === "html" || type === "docker") {
+  } else if (
+    type === "typescript" ||
+    type === "java" ||
+    type === "html" ||
+    type === "docker"
+  ) {
     return "blue";
   } else if (type === "nodejs" || type === "css") {
     return "teal";
-  }else{
-    return "yellow"; 
+  } else {
+    return "yellow";
   }
 };
