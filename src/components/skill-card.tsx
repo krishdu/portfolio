@@ -9,12 +9,10 @@ import {
   Image,
   Skeleton
 } from "@chakra-ui/react";
-import { usePalette } from "react-palette";
 import { MotionBox } from "./motion";
 import { item } from "./page-transitions";
 
-const SkillCard = ({ name, image, link, description }) => {
-  const { data, loading } = usePalette(image);
+const SkillCard = ({ name, image, link, description }: any) => {
 
   return (
     <MotionBox variants={item}>
@@ -41,7 +39,7 @@ const SkillCard = ({ name, image, link, description }) => {
               boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
             >
               <Box
-                bg={data.lightVibrant}
+                bg="blue.100"
                 position="absolute"
                 top={0}
                 bottom={0}
@@ -49,17 +47,12 @@ const SkillCard = ({ name, image, link, description }) => {
                 right={0}
                 opacity={0.25}
               ></Box>
-              {loading ? (
-                <Skeleton height={26} width={26} rounded="md" />
-              ) : (
-                <Image
-                  src={image}
-                  height={26}
-                  width={26}
-                  layout="fixed"
-                  rounded="md"
-                />
-              )}
+              <Image
+                src={image}
+                height={26}
+                width={26}
+                rounded="md"
+              />
             </Box>
             <VStack
               align="start"

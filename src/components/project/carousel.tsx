@@ -2,8 +2,11 @@ import * as React from "react";
 import { IconButton, Box, Flex } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import { AnimatePresence } from "framer-motion";
-import { IconType } from "react-icons/lib/cjs";
+import { IconType } from "react-icons";
 import { MotionImage } from "components/motion";
+
+const BiLeftArrowAltIcon = BiLeftArrowAlt as any;
+const BiRightArrowAltIcon = BiRightArrowAlt as any;
 
 const variants = {
   enter: (direction: number) => {
@@ -32,8 +35,8 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 interface BtnProps {
-  icon: IconType;
-  as: IconType;
+  icon: any;
+  as: any;
   isRight: boolean;
   right?: string;
   left?: string;
@@ -61,9 +64,9 @@ const Btn = ({ icon, as, left, right, isRight, handleImageDir }: BtnProps) => {
     >
       <IconButton
         aria-label="icon button"
-        icon={icon}
+        icon={icon as any}
         cursor="pointer"
-        as={as}
+        as={as as any}
         size="md"
         colorScheme="teal"
         borderRadius="full"
@@ -77,7 +80,7 @@ export interface CarouselProps {
   images: string[];
 }
 
-const Carousel: React.SFC<CarouselProps> = ({
+const Carousel: React.FC<CarouselProps> = ({
   images
 }) => {
   const [[page, direction], setPage] = React.useState([0, 0]);
@@ -143,15 +146,15 @@ const Carousel: React.SFC<CarouselProps> = ({
         />
       </AnimatePresence>
       <Btn
-        icon={<BiLeftArrowAlt />}
-        as={BiRightArrowAlt}
+        icon={<BiLeftArrowAltIcon />}
+        as={BiRightArrowAltIcon}
         right="25px"
         isRight={true}
         handleImageDir={nextImage}
       />
       <Btn
-        icon={<BiRightArrowAlt />}
-        as={BiLeftArrowAlt}
+        icon={<BiRightArrowAltIcon />}
+        as={BiLeftArrowAltIcon}
         left="25px"
         isRight={false}
         handleImageDir={prevImage}

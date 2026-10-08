@@ -77,7 +77,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={AiTwotoneThunderbolt as any} weight="fill" />
                   <Text>All</Text>
                 </HStack>
               </Tab>
@@ -93,7 +93,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("development")}
               >
                 <HStack spacing={1}>
-                  <Icon as={BiDesktop} weight="fill" />
+                  <Icon as={BiDesktop as any} weight="fill" />
                   <Text>Web Technology</Text>
                 </HStack>
               </Tab>
@@ -109,7 +109,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("programminglanguages")}
               >
                 <HStack spacing={1}>
-                  <Icon as={GiSpiderWeb} weight="fill" />
+                  <Icon as={GiSpiderWeb as any} weight="fill" />
                   <Text>Languages</Text>
                 </HStack>
               </Tab>
@@ -125,7 +125,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("devops")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiOutlineCloudServer} weight="fill" />
+                  <Icon as={AiOutlineCloudServer as any} weight="fill" />
                   <Text>Devops</Text>
                 </HStack>
               </Tab>
@@ -141,7 +141,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("lesspriority")}
               >
                 <HStack spacing={1}>
-                  <Icon as={GrStatusGood} weight="fill" />
+                  <Icon as={GrStatusGood as any} weight="fill" />
                   <Text>Exploring</Text>
                 </HStack>
               </Tab>

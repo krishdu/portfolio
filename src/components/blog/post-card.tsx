@@ -35,10 +35,10 @@ const PostCard = ({ article }) => {
         position="relative"
         rounded="md"
         bg={useColorModeValue("white", "gray.800")}
-        align="left"
+        textAlign="left"
         opacity={999}
       >
-        <Heading fontSize="lg" align="left" mt={0}>
+        <Heading fontSize="lg" textAlign="left" mt={0}>
         
           <Text as={Link} href={article.link} target="_blank">
             {article.title}
@@ -62,7 +62,7 @@ const PostCard = ({ article }) => {
               {article.pubDate}
             </Text>
           </Tooltip>
-          <HStack spacing={1} alignItems="center" d={["none", "none", "flex"]}>
+          <HStack spacing={1} alignItems="center" display={["none", "none", "flex"]}>
             {article.categories.map(tag => (
               <Tag
                 size="sm"
@@ -75,7 +75,7 @@ const PostCard = ({ article }) => {
             ))}
           </HStack>
         </HStack>
-        <HStack spacing={1} alignItems="center" d={["flex", "flex", "none"]}>
+        <HStack spacing={1} alignItems="center" display={["flex", "flex", "none"]}>
           {article.categories.map(tag => (
             <Tag
               size="sm"

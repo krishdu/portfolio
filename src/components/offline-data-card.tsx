@@ -88,7 +88,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
 
   return (
     <CardTransition>
-      <Box onClick={handleClick} cursor="pointer" size="xl">
+      <Box onClick={handleClick} cursor="pointer" >
         <VStack
           //   w="100%"
           rounded="xl"
@@ -135,13 +135,13 @@ const RepositoryCard = (props: RepositoryCardProps) => {
             <Flex justifyContent={"space-between"} width="100%">
               <Tooltip hasArrow label="Github link" placement="top">
                 <HStack>
-                  <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
+                  <Icon as={FiGithub as any} boxSize="0.9em" mt={"1px"} />
                   {/* <Link href={url} isExternal> */}
                   <Text
                     fontSize="sm"
                     noOfLines={1}
                     fontWeight="600"
-                    align="left"
+                    textAlign="left"
                     onClick={e => handleLinkClick(e, url)}
                   >
                     {title}
@@ -150,7 +150,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
               </Tooltip>
               {/* </Link> */}
               <Flex>
-                <Icon as={AiOutlineStar} boxSize="0.9em" mt={"1px"} />
+                <Icon as={AiOutlineStar as any} boxSize="0.9em" mt={"1px"} />
                 <Box as="span" ml="1" fontSize="sm">
                   {stars}
                 </Box>
