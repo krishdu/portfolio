@@ -3,8 +3,8 @@ import { mode } from "@chakra-ui/theme-tools";
 
 export const theme = extendTheme({
   fonts: {
-    heading: "'Red Hat Display', sans-serif",
-    body: "'Red Hat Text', sans-serif",
+    heading: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    body: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
   },
   styles: {
     global: (props) => ({
