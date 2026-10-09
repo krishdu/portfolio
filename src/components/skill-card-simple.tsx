@@ -9,11 +9,10 @@ import {
   Image,
   Skeleton,
 } from "@chakra-ui/react";
-import { usePalette } from "react-palette";
 import { MotionBox } from "./motion";
 import { item } from "./page-transitions";
 
-const SkillCardSimple = ({ name }) => {
+const SkillCardSimple = ({ name }: any) => {
   return (
     <MotionBox variants={item}>
       <MotionBox whileHover={{ y: -5 }}>

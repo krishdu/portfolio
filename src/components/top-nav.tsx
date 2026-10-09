@@ -29,6 +29,13 @@ import { BsCheckCircle } from "react-icons/bs";
 import { MdTimeline } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 
+const FaGithubIcon = FaGithub as any;
+const FaLinkedinIcon = FaLinkedin as any;
+
+const GiHamburgerMenuIcon = GiHamburgerMenu as any;
+const AiOutlineCloseIcon = AiOutlineClose as any;
+const BiChevronDownIcon = BiChevronDown as any;
+
 const webLinks = [
   { name: "Home", path: "/portfolio" },
   { name: "About", path: "/about" },
@@ -95,7 +102,7 @@ export default function TopNav() {
         >
           <IconButton
             size={"md"}
-            icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
+            icon={isOpen ? <AiOutlineCloseIcon /> : <GiHamburgerMenuIcon />}
             aria-label={"Open Menu"}
             display={["inherit", "inherit", "none"]}
             onClick={isOpen ? onClose : onOpen}
@@ -135,7 +142,7 @@ export default function TopNav() {
                   _hover={menuProps}
                   _expanded={menuProps}
                   _focus={{ boxShadow: "outline" }}
-                  rightIcon={<BiChevronDown size={18} />}
+                  rightIcon={<BiChevronDownIcon size={18} />}
                 >
                   More
                 </MenuButton>
@@ -144,7 +151,7 @@ export default function TopNav() {
                     <MenuItem>
                       <HStack>
                         <Icon
-                          as={AiTwotoneThunderbolt}
+                          as={AiTwotoneThunderbolt as any}
                           size={18}
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
@@ -156,7 +163,7 @@ export default function TopNav() {
                     <MenuItem>
                       <HStack>
                         <Icon
-                          as={BsBook}
+                          as={BsBook as any}
                           size={18}
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
@@ -168,7 +175,7 @@ export default function TopNav() {
                     <MenuItem>
                       <HStack>
                         <Icon
-                          as={MdTimeline}
+                          as={MdTimeline as any}
                           size={18}
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
@@ -186,7 +193,7 @@ export default function TopNav() {
               href={"https://github.com/krishdu"}
               size={"md"}
               isExternal
-              icon={<FaGithub />}
+              icon={<FaGithubIcon />}
               aria-label={"Github account"}
               bg={useColorModeValue("white", "gray.700")}
               _hover={{
@@ -198,7 +205,7 @@ export default function TopNav() {
               as={Link}
               href={"https://linkedin.com/in/krishnendu-patra/"}
               size={"md"}
-              icon={<FaLinkedin />}
+              icon={<FaLinkedinIcon />}
               aria-label={"LinkedIn account"}
               isExternal
               bg={useColorModeValue("white", "gray.700")}

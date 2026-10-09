@@ -1,3 +1,8 @@
+declare module "*.mp3" {
+  const src: string;
+  export default src;
+}
+
 type project = {
     featured: boolean;
     id: number;

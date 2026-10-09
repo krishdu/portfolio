@@ -15,6 +15,9 @@ import LiveData from "./live-data";
 import useSound from "use-sound";
 import lightswitch from "../assets/audios/lightswitch.mp3";
 
+const RiSignalTowerLineIcon = RiSignalTowerLine as any;
+const RiWifiOffLineIcon = RiWifiOffLine as any;
+
 const TURQUOISE = "#06b6d4";
 
 const iconProps = {
@@ -52,7 +55,7 @@ const RepositoriesList = () => {
               aria-label={"live"}
               size="md"
               colorScheme={"linkedin"}
-              icon={<RiSignalTowerLine />}
+              icon={<RiSignalTowerLineIcon />}
               isActive={activeTab === "live"}
               onClick={() => handleClick('live')}
               {...iconProps}
@@ -63,7 +66,7 @@ const RepositoriesList = () => {
               aria-label={"live"}
               size="md"
               colorScheme={"linkedin"}
-              icon={<RiWifiOffLine />}
+              icon={<RiWifiOffLineIcon />}
               isActive={activeTab === "offline"}
               onClick={() => handleClick('offline')}
               {...iconProps}

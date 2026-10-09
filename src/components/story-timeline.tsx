@@ -46,7 +46,6 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
           onClose={close}
           placement={place}
           closeOnBlur={false}
-          width={["9.3rem", "13rem", "15rem", "100%"]}
         >
           <PopoverTrigger>
             <Box onClick={open} position="relative">

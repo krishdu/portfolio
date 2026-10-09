@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   Box,
   Flex,
@@ -8,8 +9,8 @@ import {
 import { motion, isValidMotionProp } from "framer-motion";
 import placeholder from "assets/images/placeholder.png";
 
-export const MotionBox = motion.custom(
-  forwardRef((props, ref) => {
+export const MotionBox = motion(
+  forwardRef((props: any, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -17,8 +18,8 @@ export const MotionBox = motion.custom(
     return <Box ref={ref} {...chakraProps} />;
   })
 );
-export const MotionFlex = motion.custom(
-  forwardRef((props, ref) => {
+export const MotionFlex = motion(
+  forwardRef((props: any, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -27,8 +28,8 @@ export const MotionFlex = motion.custom(
   })
 );
 
-export const MotionImage = motion.custom(
-  forwardRef((props, ref) => {
+export const MotionImage = motion(
+  forwardRef((props: any, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))

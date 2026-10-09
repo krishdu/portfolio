@@ -19,6 +19,8 @@ import Header from "./header";
 import Section from "./section";
 import { PageSlideFade } from "./page-transitions";
 
+const FaMedalIcon = FaMedal as any;
+
 const MyStory = () => {
   return (
     <VStack>
@@ -112,7 +114,7 @@ const MyStory = () => {
                         rounded="full"
                         size="sm"
                         aria-label="medal"
-                        icon={<FaMedal />}
+                        icon={<FaMedalIcon />}
                       />
 
                       <VStack align="start">

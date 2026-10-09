@@ -4,7 +4,6 @@ import useFetch from "use-http";
 import { SimpleGrid, Box, useMediaQuery } from "@chakra-ui/react";
 import { PageSlideFade } from "./page-transitions";
 import RepositoryCard from "./live-data-card";
-import StackGrid from "react-stack-grid";
 import CardSkeleton from "./card-skeleton";
 
 const LiveData = () => {
@@ -44,9 +43,10 @@ const LiveData = () => {
         </SimpleGrid>
       ) : (
         <Box mt={4}>
-          <StackGrid columnWidth={columnWidth}>
-            {repos?.map((repo, index) => (
+          <SimpleGrid columns={[1, 2, 3]} spacing={4}>
+            {repos?.map((repo: any, index: number) => (
               <RepositoryCard
+                key={index}
                 title={repo.name}
                 description={repo.description}
                 language={repo.language}
@@ -55,7 +55,7 @@ const LiveData = () => {
                 forks_count={repo.forks_count}
               />
             ))}
-          </StackGrid>
+          </SimpleGrid>
         </Box>
       )}
     </PageSlideFade>

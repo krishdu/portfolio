@@ -59,16 +59,16 @@ const Card = (props: CardProps) => {
               src={logo}
               alt={alt}
             />
-            <Stack spacing={2} pl={3} align="left">
+            <Stack spacing={2} pl={3} textAlign="left">
               <Heading
-                align="left"
+                textAlign="left"
                 fontSize="xl"
                 color={`mode.${colorMode}.career.text`}
               >
                 {title}
               </Heading>
               <Heading
-                align="left"
+                textAlign="left"
                 fontSize="sm"
                 color={`mode.${colorMode}.career.subtext`}
               >
@@ -126,12 +126,12 @@ const About = () => {
                 Career
               </Header>
               <Stack pl={3}>
-                <Box as={BsFillBriefcaseFill} size="25px" />
+                <Box as={BsFillBriefcaseFill as any} size="25px" />
               </Stack>
             </Flex>
           </Heading>
         </MotionBox>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+        <VStack spacing={4} marginBottom={6} textAlign="left" mx={[0, 0, 6]} mt={12}>
           {companies.map((company, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card
@@ -153,11 +153,11 @@ const About = () => {
               Education
             </Header>
             <Stack pl={3}>
-              <Box as={FaGraduationCap} size="25px" />
+              <Box as={FaGraduationCap as any} size="25px" />
             </Stack>
           </Flex>
         </Heading>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+        <VStack spacing={4} marginBottom={6} textAlign="left" mx={[0, 0, 6]} mt={12}>
           {institutes.map((institute, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card

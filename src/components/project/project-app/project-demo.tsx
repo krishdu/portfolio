@@ -22,10 +22,13 @@ import Carousel from "components/project/carousel";
 import { Redirect, useParams } from "react-router-dom";
 import { projectsList } from "data/projects-list";
 
+const BiLinkExternalIcon = BiLinkExternal as any;
+const FiGithubIcon = FiGithub as any;
+
 export interface PostProps {}
 
 const ProjectDemo: React.FC<PostProps> = () => {
-  const { id } = useParams();
+  const { id } = useParams() as any;
   const [isInvalidId, setIsInvalidId] = React.useState(false);
   const [projects, setProjects] = React.useState(null);
   const textColor = useColorModeValue("gray.500", "gray.200");
@@ -97,7 +100,7 @@ const ProjectDemo: React.FC<PostProps> = () => {
                 size={"sm"}
                 color={buttonColor}
                 bg={buttonBgColor}
-                leftIcon={<BiLinkExternal size={18} />}
+                leftIcon={<BiLinkExternalIcon size={18} />}
               >
                 Demo
               </Button>
@@ -110,7 +113,7 @@ const ProjectDemo: React.FC<PostProps> = () => {
               size={"sm"}
               color={buttonColor}
               bg={buttonBgColor}
-              leftIcon={<FiGithub size={18} />}
+              leftIcon={<FiGithubIcon size={18} />}
             >
               Github link
             </Button>
